@@ -1,4 +1,5 @@
 import CTLS
+import Sockets
 
 /// An SSL Socket.
 public protocol ClientSocket: Socket, ClientStream { }

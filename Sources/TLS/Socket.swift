@@ -1,4 +1,5 @@
 import CTLS
+import Sockets
 
 public protocol Socket: Stream {
     var socket: TCPInternetSocket { get }
