@@ -1,3 +1,4 @@
+import Bits
 import CTLS
 
 public protocol ReadableSocket: Socket, ReadableStream { }

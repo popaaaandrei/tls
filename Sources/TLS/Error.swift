@@ -1,4 +1,5 @@
 import CTLS
+import libc
 
 public struct TLSError: Error {
     public let functionName: String
