@@ -1,5 +1,6 @@
 import CTLS
 import Sockets
+import Transport
 
 public final class InternetSocket: Socket {
     public let socket: TCPInternetSocket

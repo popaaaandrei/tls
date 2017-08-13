@@ -1,5 +1,6 @@
 import CTLS
 import Sockets
+import Transport
 
 /// A server SSL Socket.
 public protocol ServerSocket: Socket, ServerStream {

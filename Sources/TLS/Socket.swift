@@ -1,5 +1,6 @@
 import CTLS
 import Sockets
+import Transport
 
 public protocol Socket: Stream {
     var socket: TCPInternetSocket { get }

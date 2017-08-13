@@ -1,6 +1,7 @@
 import Bits
 import CTLS
 import Sockets
+import Transport
 
 public protocol WriteableSocket: Socket, WriteableStream { }
 
