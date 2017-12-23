@@ -18,7 +18,7 @@ extension ServerSocket {
     }
 
     /// Accepts a connection to this SSL server from a client
-    public func accept() throws -> Self {
+    public func accept() throws -> InternetSocket {
         let client = try socket.accept()
 
         guard let ssl = SSL_new(context.cContext) else {
@@ -43,6 +43,8 @@ extension ServerSocket {
             functionName: "SSL_do_handshake"
         )
         
-        return self
+        let c = InternetSocket(client, context)
+        c.cSSL = ssl
+        return c
     }
 }
